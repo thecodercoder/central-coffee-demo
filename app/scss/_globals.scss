@@ -1,0 +1,59 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: $gray;
+    background: $cream;
+    font-family: $body;
+}
+
+*, *::after, *::before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+// Helper classes
+
+.text-center {
+    text-align: center;
+}
+
+
+// Placeholders
+
+@mixin center-y {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@mixin center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@mixin center-xy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}

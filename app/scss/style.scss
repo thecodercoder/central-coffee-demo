@@ -1,4 +1,12 @@
-.test {
-    color: purple;
-    width: percentage(5/7);
-}
+@import "variables";
+@import "mixins";
+@import "globals";
+@import "header";
+@import "block";
+
+// modules
+@import "modules/overlay";
+
+// sections
+@import "sections/home";
+@import "sections/about";

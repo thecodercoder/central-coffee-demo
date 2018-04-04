@@ -1,0 +1,30 @@
+.header {
+    background: $gray;
+    padding: 10px;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+    }
+
+    &__image {
+        flex: 0 1 auto;
+    }
+
+    &__nav {
+        flex: 0 1 auto;
+
+        &-item {
+            font-size: calcRem(18px);
+            color: #ffffff;
+            padding: 0 15px;
+            transition: color 150ms ease-in-out;
+
+            &:hover {
+                color: $fresh;
+            }
+        }    
+    }
+    
+}
