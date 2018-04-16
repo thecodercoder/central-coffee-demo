@@ -1,4 +1,4 @@
-#about {
+#location {
     
     .grid {
         display: block;
@@ -6,24 +6,23 @@
         @media #{$medium}{
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-between;
+            justify-content: flex-start;
         }
 
         &__item {
-            height: 200px; 
             margin: 0 0 20px;
+            padding: 0 10px;
             background-size: cover;            
             background-position: center center;
 
             @media #{$medium}{
-                width: 48%;
+                //width: 48%;
             }
             
-            @media #{$large}{
-                width: 21%;
-                margin: 0 10px;
+            &.map img {
+                width: 100%;
+                max-width: 500px;
             }
-            
         }
     }
 }

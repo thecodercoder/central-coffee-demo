@@ -1,0 +1,68 @@
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    background: $gray;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+    z-index: 10;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+    }
+
+    &__image {
+        flex: 0 1 auto;
+        height: 60px;
+
+        @media #{$medium}{
+            height: 80px;    
+        }
+    }
+
+    &__nav {
+        flex: 0 1 auto;
+        display: none;
+
+        @media #{$medium}{
+            display: block;
+        }
+
+        &-item {
+            font-size: calcRem(18px);
+            color: #ffffff;
+            padding: 0 15px;
+            transition: color 150ms ease-in-out;
+
+            &:hover {
+                color: $fresh;
+            }
+        }        
+    }
+    
+    &__open {
+        display: block;
+        padding: 12px;
+        width: 55px;
+        position: absolute;
+        right: 5px;
+
+        @media #{$medium}{
+            display: none;
+        }
+        
+        span {
+            display: block;
+            background: #ffffff;
+            height: 2px;
+            width: 100%;
+            margin-bottom: 8px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+}

@@ -1,9 +1,22 @@
 #home {
 
     &.block {
-        background-image: url(../app/images/coffee-983955_1920.jpg);
+        background-image: url(../images/coffee-983955_1920.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;        
+    }
+
+    .block__content {
+        
+        @media #{$medium-large}{            
+            @include center-xy;
+            margin-top: -2rem;
+        }
+
+        h2 {
+            font-family: $body;
+            font-size: calcRem(30px);
+        }
     }
 }

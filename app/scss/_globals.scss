@@ -11,9 +11,21 @@ body {
     font-family: $body;
 }
 
+main {
+    padding-top: 80px;
+
+    @media #{$medium}{
+        padding-top: 100px;
+    }    
+}
+
 *, *::after, *::before {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+h1, h2 {
+    margin: 0px;
 }
 
 img {
@@ -34,10 +46,17 @@ a, a:visited {
 
 // Helper classes
 
+.noscroll {
+    overflow-y: hidden;
+}
+
 .text-center {
     text-align: center;
 }
 
+.text-white {
+    color: #ffffff;
+}
 
 // Placeholders
 

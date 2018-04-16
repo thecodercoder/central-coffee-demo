@@ -10,7 +10,10 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0",
     "gulp-sass": "^3.2.1",
-    "gulp-wait": "0.0.2"
+    "gulp-useref": "^3.1.5",
+    "gulp-wait": "0.0.2",
+    "smooth-scroll": "^12.1.5"
   }
 }

@@ -1,12 +1,16 @@
 @import "variables";
 @import "mixins";
 @import "globals";
-@import "header";
 @import "block";
 
 // modules
 @import "modules/overlay";
+@import "modules/offcanvas";
 
 // sections
+@import "sections/header";
 @import "sections/home";
 @import "sections/about";
+@import "sections/menu";
+@import "sections/location";
+@import "sections/footer";

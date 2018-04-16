@@ -14,17 +14,20 @@
         max-width: none;
     }
 
+    &__wrapper {
+
+        &:nth-child(odd){
+            background-color: $gray;
+            color: #ffffff;
+        }
+    }
+
     &__content {
         display: block;
         position: relative;
         width: 100%;
 
-        @media #{$medium-large}{            
-            @include center-xy;
-            margin-top: -2rem;
-        }
-
-        &--text {            
+        &.-text {            
             margin: auto;            
             font-size: calcRem(16px);
             line-height: 1.8;
@@ -53,13 +56,26 @@
         }
 
         h2 {
-            font-size: calcRem(24px);
-            color: #ffffff;
-            margin: 0;
+            font-family: $headline;
+            font-size: calcRem(28px);
+            margin-bottom: 20px;
 
             @media #{$medium-large}{
-                font-size: calcRem(30px);
+                font-size: calcRem(34px);
             }
         }
+        
+        header {
+            font-size: calcRem(20px);
+            font-weight: bold;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        
+        .intro {
+            margin-bottom: 2rem;
+        }
+
     }
 }
