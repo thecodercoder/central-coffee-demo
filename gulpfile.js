@@ -3,6 +3,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var wait = require('gulp-wait');
 var useref = require('gulp-useref');
+var deploy = require('gulp-gh-pages');
 
 // Sass task: compiles the style.scss file into style.css in the same directory
 gulp.task('sass', function(){
@@ -37,3 +38,9 @@ gulp.task('useref', function(){
 // Defines the default task to run, when you type in "gulp" into the command line.
 // We want to run 'sass,' then run the watch task.
 gulp.task('default', ['sass', 'useref', 'images', 'watch']);
+
+// Deploy changes to GitHub repo
+gulp.task('deploy', function(){
+    return gulp.src('dist/**/*')
+        .pipe(deploy())
+});
